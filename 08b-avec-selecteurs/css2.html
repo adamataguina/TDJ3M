@@ -1,82 +1,95 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>
-			</title>
-			<style>
-				body {
-					color: red;
-				}
-				
-				div {
-					color: green;
-				}
-				div p {
-					color: blue;
-				}
-				
-				p {
-					color: orange;
-				}
-				
-				.class1 {
-					color: purple;
-				}
-				
-				div#div1 p.class1 {
-					color: teal;
-				}
-				
-				div#div1 p {
-					color: black;
-				}
-				
-			</style>
-		</head>
-		<body>
-			texte de body 
-			
-			<div>
-				texte de div
-			</div>
-			
-			<p>
-				texte de p
-			</p>
-			
-			<p class="class1">
-				texte de p
-			</p>
-			
-			<div>
-				<p>
-					texte de p dans div
-				</p>
-				<p class="class1">
-					texte de p dans div .class1
-				</p>
-				<p class="class2">
-					texte de p dans div .class2
-				</p>
-				
-			</div>
-			
-			<div id="div1">
-				<p>
-					texte de p dans #div1
-				</p>
-				<p class="class1">
-					texte de p dans #div1 .class1
-				</p>
-				<p class="class2">
-					texte de p dans #div1 .class2
-					<br />
-					<span>texte de span dans #div1 .class2</span>
-					<br />
-					<span class="class3">texte de span .class3 dans #div1 .class2</span>
-				</p>
-				
-			</div>
-		
-		</body>
-	</html>
+<html>
+    <head>
+        <title>Page with Styled Elements</title>
+        <style>
+            body {
+                color: #333; /* Body text color */
+            }
+
+            div {
+                color: #008000; /* Text color for div */
+            }
+
+            div p {
+                color: #0000FF; /* Text color for p tags inside div */
+            }
+
+            p {
+                color: #FFA500; /* Text color for all p tags */
+            }
+
+            .class1 {
+                color: #800080; /* Color for elements with class "class1" */
+            }
+
+            div#div1 p.class1 {
+                color: #008080; /* Color for p tags with class "class1" inside div#div1 */
+            }
+
+            div#div1 p {
+                color: #000000; /* Color for p tags inside div#div1 */
+            }
+
+            .class2 {
+                color: #FF6347; /* Color for elements with class "class2" */
+            }
+
+            .class3 {
+                color: #FFD700; /* Color for elements with class "class3" */
+            }
+
+            /* Adjust font-size for 7th and 12th rows */
+            div#div1 p:nth-of-type(7),
+            div#div1 p:nth-of-type(12) {
+                font-size: 16px; /* Make the font size 16px */
+                font-weight: bold; /* Optional: make the font bold for emphasis */
+            }
+
+        </style>
+    </head>
+    <body>
+        texte de body 
+
+        <div>
+            texte de div
+        </div>
+
+        <p>
+            texte de p
+        </p>
+
+        <p class="class1">
+            texte de p
+        </p>
+
+        <div>
+            <p>
+                texte de p dans div
+            </p>
+            <p class="class1">
+                texte de p dans div .class1
+            </p>
+            <p class="class2">
+                texte de p dans div .class2
+            </p>
+        </div>
+
+        <div id="div1">
+            <p>
+                texte de p dans #div1
+            </p>
+            <p class="class1">
+                texte de p dans #div1 .class1
+            </p>
+            <p class="class2">
+                texte de p dans #div1 .class2
+                <br />
+                <span>texte de span dans #div1 .class2</span>
+                <br />
+                <span class="class3">texte de span .class3 dans #div1 .class2</span>
+            </p>
+        </div>
+    </body>
+</html>
+   
