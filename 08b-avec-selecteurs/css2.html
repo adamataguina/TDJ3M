@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Page with Styled Elements</title>
+        <title> </title>
         <style>
             body {
-                color: #333; /* Body text color */
+                color: #333; 
+                font-family: Arial, sans-serif; 
+                background-color: #f0f0f0; 
             }
 
             div {
-                color: #008000; /* Text color for div */
+                color: #006400; 
+                background-color: #e0ffe0; 
+                padding: 10px; 
+                border: 1px solid #006400;
+                margin-bottom: 10px; 
             }
 
             div p {
-                color: #0000FF; /* Text color for p tags inside div */
+                color: #00008b; 
             }
 
             p {
-                color: #FFA500; /* Text color for all p tags */
+                color: #ff6347; 
             }
 
             .class1 {
-                color: #800080; /* Color for elements with class "class1" */
+                color: #800080;
             }
 
             div#div1 p.class1 {
-                color: #008080; /* Color for p tags with class "class1" inside div#div1 */
+                color: #20b2aa;
             }
 
             div#div1 p {
-                color: #000000; /* Color for p tags inside div#div1 */
+                color: #2f4f4f; 
             }
 
             .class2 {
-                color: #FF6347; /* Color for elements with class "class2" */
+                color: #ff4500; 
             }
 
             .class3 {
-                color: #FFD700; /* Color for elements with class "class3" */
+                color: #8a2be2;
             }
 
-            /* Adjust font-size for 7th and 12th rows */
-            div#div1 p:nth-of-type(7),
-            div#div1 p:nth-of-type(12) {
-                font-size: 16px; /* Make the font size 16px */
-                font-weight: bold; /* Optional: make the font bold for emphasis */
+            span {
+                color: #696969; 
             }
-
         </style>
     </head>
     <body>
-        texte de body 
+        texte de body
 
         <div>
             texte de div
@@ -90,6 +92,6 @@
                 <span class="class3">texte de span .class3 dans #div1 .class2</span>
             </p>
         </div>
+
     </body>
 </html>
-   
