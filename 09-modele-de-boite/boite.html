@@ -1,66 +1,107 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>
-			</title>
-			<style>
+<html>
+	<head>
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
 			
-				* {
-				  margin: 0;
-				  padding: 0;
-				  box-sizing: border-box;
-				}
-								
-			</style>
-			
-		</head>
-		<body>
-			<div id="contenu">
-				<div class="contenuItem selecté">
-					<a name="acceuil"></a>
-					<h4>Acceuil</h4>
-					<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-				</div>
-				<div class="contenuItem">
-					<a name="contact"></a>
-					<h4>Contact</h4>
-					<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-				</div>
-				<div class="contenuItem">
-					<a name="aide"></a>
-					<h4>Aide</h4>
-					<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-				</div>
-				<div class="contenuItem">
-					<a name="magasins"></a>
-					<h4>Magasins</h4>
-					<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-				</div>
-				<div class="contenuItem">
-					<a name="legal"></a>
-					<h4>Legal</h4>
-					<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-				</div>
-				<div class="contenuItem">
-					<a name="liens"></a>
-					<h4>Liens</h4>
-					<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-				</div>
-				<div class="contenuItem">
-					<a name="social"></a>
-					<h4>Social</h4>
-					<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-				</div>
-				<div class="contenuItem">
-					<a name="partenaires"></a>
-					<h4>Partenaires</h4>
-					<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-				</div>
-				<div class="contenuItem">
-					<a name="deconnexion"></a>
-					<h4>Deconnexion</h4>
-					<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-				</div>
+			#contenu {
+				background-color: #f0f0f0; 
+				padding: 20px;
+			}
+
+			.contenuItem {
+				background-color: #ffffff; 
+				border-radius: 10px;
+				border-style: solid;
+				border-width: 2px; 
+				border-color: #ccc; 
+				margin-bottom: 15px; 
+				padding: 20px;
+				text-align: left;  
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+				transition: all 0.3s ease-in-out;  
+			}
+
+			.contenuItem:hover {
+				background-color: #f7f7f7;
+				box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+			}
+
+			.contenuItem h4 {
+				font-size: 1.25rem; 
+				font-weight: bold;
+				color: #333;
+				margin-bottom: 10px;
+			}
+
+			.contenuItemContenu {
+				font-size: 1rem;
+				color: #666;
+			}
+
+			.contenuItemContenu::first-letter {
+				font-size: 200%;
+				font-weight: bold;
+				color: #0099cc; 
+			}
+
+			#contenu {
+				background: linear-gradient(to right, #f0f0f0, #d9e5e7);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="contenu">
+			<div class="contenuItem selecté">
+				<a name="acceuil"></a>
+				<h4>Acceuil</h4>
+				<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
 			</div>
-		</body>
-	</html>
+			<div class="contenuItem">
+				<a name="contact"></a>
+				<h4>Contact</h4>
+				<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+			<div class="contenuItem">
+				<a name="aide"></a>
+				<h4>Aide</h4>
+				<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+			<div class="contenuItem">
+				<a name="magasins"></a>
+				<h4>Magasins</h4>
+				<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+			<div class="contenuItem">
+				<a name="legal"></a>
+				<h4>Legal</h4>
+				<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+			<div class="contenuItem">
+				<a name="liens"></a>
+				<h4>Liens</h4>
+				<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+			<div class="contenuItem">
+				<a name="social"></a>
+				<h4>Social</h4>
+				<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+			<div class="contenuItem">
+				<a name="partenaires"></a>
+				<h4>Partenaires</h4>
+				<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+			<div class="contenuItem">
+				<a name="deconnexion"></a>
+				<h4>Deconnexion</h4>
+				<div class="contenuItemContenu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+	</body>
+</html>
